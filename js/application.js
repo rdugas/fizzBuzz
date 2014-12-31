@@ -9,6 +9,9 @@ $(document).ready(function(){
 		else if (dividedByEvenly(myNumber, 3)){
 			$("body").append("fizz, ");
 		}
+		else if (myNumber == 100){
+			$("body").append("buzz. THE END!!!");
+		}
 		else if (dividedByEvenly(myNumber, 5)){
 			$("body").append("buzz, ");
 		}
