@@ -4,18 +4,18 @@ $(document).ready(function(){
 	for (var myNumber = 1; myNumber <= 100; myNumber++) {
 
 		if (dividedByEvenly(myNumber, 3) && dividedByEvenly(myNumber, 5)) {
-			$("body").append("fizz buzz");
+			$("body").append("FIZZ BUZZ, ");
 		}
 		else if (dividedByEvenly(myNumber, 3)){
-			$("body").append("fizz");
+			$("body").append("fizz, ");
 		}
 		else if (dividedByEvenly(myNumber, 5)){
-			$("body").append("buzz");
+			$("body").append("buzz, ");
 		}
 		else {
-			$("body").append(myNumber);
+			$("body").append(myNumber + " ,");
 		}
-	}
+	};
 
 	function dividedByEvenly(numerator, denominator){
 		if (numerator % denominator == 0)
